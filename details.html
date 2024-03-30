@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d23daa5a64.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="home-background">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-spacing" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-spacing" href="details.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-spacing" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item-spacing" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+      <main role="main">
+        <div class="container py-4 border-bottom">
+            <header class="pb-3 mb-4">
+                <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title>
+                        <path d="M20 10 L40 10 L40 90 Q40 95 45 95 L55 95 Q60 95 60 90 L60 10 L80 10 Q85 10 85 15 L85 85 Q85 90 90 90 L95 90 Q100 90 100 85 L100 15 Q100 10 95 10 L20 10 Z" fill="#ffffff" />
+                      </svg>
+                    <span class="fs-4">Dino Claro</span>
+                </a>
+            </header>
+        
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3 custom-jumbotron-text custom-jumbotron-bg">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                    <p class="col-md-8 fs-4t">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+                    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+                </div>
+            </div>
+           
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-bg-dark rounded-3 custom-jumbotron-text custom-jumbotron-bg">
+                        <h2>Change the background</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-light" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6" style="margin-top: 20px;">
+                    <div class="h-100 p-5 text-bg-light rounded-3 custom-jumbotron-bg custom-jumbotron-text">
+                        <h2>Education</h2>
+                        <!-- Timeline Section -->
+                        <h4 style="margin-left: 1.2rem; color: #b5babb;">Latest News</h4>
+                        <ul class="timeline-3">
+                            <li class="timeline-item ">
+                                <a href="#!">University of Cape Town</a>
+                                <a href="#!" class="float-end">21 March, 2014</a>
+                                <p class="card-text">UCT</p>
+                            </li>
+                            <li class="timeline-item">
+                                <div>
+                                    <a href="#!">University of Cape Town</a>
+                                </div>
+                                <div>
+                                    <a href="#!" class="float-end">4 March, 2014</a>
+                                </div>
+                                <div>
+                                    <p class="mt-2">This is some filler text to see what happens when a description is given also i am trying to practive typing without looking at the keyboard and it looks like its is fooign alright</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <a href="#!">King Edward Vii School</a>
+                                <a href="#!" class="float-end">1 April, 2014</a>
+                                <p class="mt-2">KES</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+  
+      <footer class="container">
+        <p>&copy; Company 2017-2018</p>
+      </footer>
+
+    <!-- Script -->
+    <script defer src="script.js"></script>
+</body>
+</html>
