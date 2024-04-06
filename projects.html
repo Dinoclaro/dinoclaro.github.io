@@ -41,28 +41,31 @@
             <div class="col-md-6 mb-4">
                 <div class="card custom-card-color custom-jumbotron-text">
                     <div class="card-body ">
-                        <h5 class="card-title">Priorities</h5>
-                        <p class="card-text">Keep track of your most important tasks at a glance with this desktop app.</p>
+                        <h5 class="card-title">Object Detection for the Duckiebot</h5>
+                        <p class="card-text">Yolov5 object detection model and Braitenberg controller implemented on the Duckiebot platform.</p>
                         <div class="image-container">
-                            <img src="svg/python.png" alt="Image Description" class="img-fluid card-image">
+                            <img src="src/abbeyRoad.png" alt="Abbey Road by the Quackles" class="img-fluid card-image">
                         </div>
             
-                        <a href="#" class="btn btn-primary" target="_blank">View Project</a>
                         
-                        <p></p>
-                        <ul class="list-group list-group-horizontal d-flex justify-content-center">
-                            <li class="list-group-item">
-                                <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="h-5 w-auto mr-2" src="svg/python.svg" style="color: transparent;">Python
-                            </li>
-                            <li class="list-group-item">
-                                <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="h-5 w-auto mr-2" src="svg/python.svg" style="color: transparent;">Python
-                            </li>
-                        </ul>
-                        <p></p>
+                        <button class="btn btn-primary toggle-button d-flex align-items-center" type="button" onclick="openPDF('src/FYP_DT_objdet.pdf')">View project</button>
+                        <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
+                            <p class="text-center">
+                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
+                                    <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/ros-original.svg" style="color: transparent;">
+                                    <span class="hover-text">ROS</span>
+                                </span>
+                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
+                                    <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/python-original.svg" style="color: transparent;">
+                                    <span class="hover-text">Python</span>
+                                </span>
+                                </p>
+                        </div>
                         <button class="btn btn-primary toggle-button d-flex align-items-center" onclick="toggleContent(this)">+</button>
                         <div class="additional-content">
                             <p></p>
-                            <p>This is additional information about the project.</p>
+                            <p>Final year undergraduate project to investigate the Duckiebot platform for Machine Learning by implementing an object detection model. A pretrained YOLOv5 model, fine-tuned with a publicly available Duckietown dataset was used to detect Duckeitown specific objects in Python. To enable autonomous object avoidance, a simple Braitenberg controller was used. The final solution could detect objects (duckies) in the scene and compute wheel commands to avoid the objects for relatively simple scenarios. The project formed a foundational model that future students can improve and build on for more sophisticated behaviours.   </p>
+                            <a href="https://github.com/Dinoclaro/DT_objdet" class="btn btn-primary" target="_blank">Github</a>
                         </div>
                     </div>
                 </div>
@@ -78,6 +81,7 @@
                         </div>
             
                         <a href="#" class="btn btn-primary" target="_blank">View Project</a>
+                        <button class="btn btn-outline-light" type="button" onclick="openPDF('src/FYP_DT_objdet.pdf')">View project</button>
                         
                         <p></p>
                         <ul class="list-group list-group-horizontal d-flex justify-content-center">

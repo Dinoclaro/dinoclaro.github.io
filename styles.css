@@ -42,7 +42,7 @@ body {
 .about-section {
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
+    margin-top: 10%;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -97,7 +97,7 @@ body {
 
 .circle-container {
     display: flex;
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10vh;
@@ -265,5 +265,71 @@ ul.timeline-3 {
 }
 .custom-jumbotron-text
 {
+    color: #dee2e6;
+}
+
+/* Lists */
+i {
+    display: inline-block;
+    width: 30px;
+}
+
+.custom-jumbotron-text .list-group-item strong {
+    font-weight: bold;
+}
+
+/* List */
+.custom-list-background .list-group-item {
+    background-color: #343a40; /* Change to your desired background color */
+}
+
+.custom-text-color .list-group-item {
+    color: #dee2e6; /* Change to your desired text color */
+}
+
+/* Hover */
+.svg-icon {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.svg-icon:hover {
+    transform: scale(1.5); /* Scale up the image on hover */
+}
+
+.hover-text {
+    display: none;
+    position: absolute;
+    bottom: -0.5rem; /* Adjust this value to position the text below the icons */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.35rem;
+    color: #dee2e6;
+}
+
+.svg-icon:hover .hover-text {
+    display: block;
+}
+
+/* Text */
+.content-large
+{
+    font-size: 2rem;
+    color: #dee2e6;
+}
+
+.content-medium{
+    font-size: 1.4rem;
+    color: #dee2e6;
+}
+
+.content-small{
+    font-size: 0.8rem;
+    color: #dee2e6;
+}
+
+.content-date{
+    font-size: 1rem;
     color: #dee2e6;
 }

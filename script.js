@@ -1,9 +1,9 @@
 /* Hamburger Menu Animation */
 
-function toggleNavbar() {
-    var navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("show-nav");
-}
+// function toggleNavbar() {
+//     var navLinks = document.getElementById("navLinks");
+//     navLinks.classList.toggle("show-nav");
+// }
 
 /* Scroll Animation */
 const observer = new IntersectionObserver(entries => {
@@ -50,4 +50,9 @@ function toggleContent(button) {
         content.style.display = "none";
         button.textContent = "+";
     }
+}
+
+function openPDF(pdfUrl) {
+    // Open the PDF in a new window or tab
+    window.open(pdfUrl, '_blank');
 }
