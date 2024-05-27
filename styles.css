@@ -180,15 +180,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #111;
+    color: #212529;
     height: 10vh; /* Adjust height as needed */
 }
 
 /* Style for navbar links */
-.navbar-links .nav-link {
+.navbar-links .nav-link { 
     margin: 5px 0; /* Add margin between each link */
 }
-
+.nav-link{color: #212529;}
 .nav-item-spacing {
     margin-left: auto; /* Adjust margin as needed */
     margin-right: auto;
@@ -277,7 +277,7 @@ i {
 .custom-jumbotron-text .list-group-item strong {
     font-weight: bold;
 }
-
+.list-group-item{ border: none; color: #dee2e6;}
 /* List */
 .custom-list-background .list-group-item {
     background-color: #343a40; /* Change to your desired background color */
@@ -332,4 +332,8 @@ i {
 .content-date{
     font-size: 1rem;
     color: #dee2e6;
+}
+
+.hidden-text{
+    color:  #212529;
 }
