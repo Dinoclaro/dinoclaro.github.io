@@ -113,7 +113,7 @@ body {
 }
 
 .circle-container.hovered {
-    box-shadow: 2px 2px 250px 200px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 500px 400px rgba(255, 255, 255, 0.5);
 }
 /* Cards */
 .custom-card-width {
@@ -336,4 +336,12 @@ i {
 
 .hidden-text{
     color:  #212529;
+}
+
+.custom-nav-link {
+    color: #212529; /* Change this to your desired colour */
+}
+
+.custom-nav-link:hover {
+    color: #212529; /* Change this to your desired hover colour */
 }
