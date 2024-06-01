@@ -40,15 +40,16 @@ circleContainer.addEventListener('click', function() {
     this.classList.toggle('hovered');
 });
 
+
 /* Button for cards */
-function toggleContent(button) {
+function toggleContent(button, showText) {
     var content = button.nextElementSibling;
     if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
         button.textContent = "-";
     } else {
         content.style.display = "none";
-        button.textContent = "+";
+        button.textContent = showText;
     }
 }
 
