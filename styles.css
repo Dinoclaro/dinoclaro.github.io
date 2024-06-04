@@ -102,7 +102,6 @@ body {
     flex: 1; /* Allow the card body to grow vertically to fill the available space */
 }
 .card-title{
-    font-weight: bold;
     color: #f3d55e;
     font-size: 1.6rem;
 }
