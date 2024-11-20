@@ -1,244 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi, I'm Dino!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/d23daa5a64.js" crossorigin="anonymous"></script>
-    <link href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi, I'm Dino!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/d23daa5a64.js" crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body class="home-background">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid justify-content-center">
-            <ul class="navbar-nav d-flex flex-row justify-content-center w-100">
-                <li class="nav-item mx-2">
-                    <a class="nav-link nav-item-spacing" href="index.html">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link nav-item-spacing" href="about.html">About</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link nav-item-spacing" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link nav-item-spacing" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card custom-card-color custom-jumbotron-text">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center"> Object Detection for the Duckiebot</h5>
-                        <p class= "text-center" >2023</p>
-                        <div class="image-container">
-                            <img src="src/abbeyRoad.png" alt="Abbey Road by the Quackles" class="img-fluid card-image">
-                        </div>
-                        <p class="content-medium">Obstacle avoidance implemented using Yolov5 for object detection and a reactive Braitenberg controller on the Duckiebot platform. This project ranked within the top 10 among 2023 final-year projects.</p>
-                    
-                        <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
-                            <p class="text-center">
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/ros-original.svg" style="color: transparent;">
-                                    <span class="hover-text">ROS</span>
-                                </span>
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/python-original.svg" style="color: transparent;">
-                                    <span class="hover-text">Python</span>
-                                </span>
-                                </p>
-                        </div>
-                        <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
-                        <div class="additional-content">
-                            <p></p>
-                            <p class="content-text">Final-year undergraduate project to investigate the Duckiebot platform for Machine Learning by implementing an object detection model. A pre-trained YOLOv5 model, fine-tuned with a publicly available Duckietown dataset, was utilised to detect Duckietown-specific objects in Python. 
-                            <br><br>    
-                            To enable autonomous object avoidance, a simple Braitenberg controller was employed. The final solution could detect objects (duckies) in the scene and compute wheel commands to avoid the objects for relatively simple scenarios. The project formed a foundational model that future students can improve and build upon for more sophisticated behaviors.​​​​​​​​​​​​​​​​</p>
-                            <a href="https://drive.google.com/file/d/1_uiTz4mOIl-aGlWeUl2NbDmRzRhocNRD/view?usp=drivesdk" class="btn btn-outline-light" target="_blank">Thesis</a>
-                            <a href="https://github.com/Dinoclaro/DT_objdet" class="btn btn-outline-light" target="_blank">Github</a>
-                            <a href="https://duckietown.com/dino-claro-duckietown-journey/" class="btn btn-outline-light" target="_blank">Duckietown Article</a>
-                            
-                        </div>
-                        <!-- TODO: You can save a solidworks file as an html file. Try to get to open up.--> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card custom-card-color custom-jumbotron-text">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center"> Hand-Held, 6.4V Pipe Bender</h5>
-                        <p class= "text-center" >2023</p>
-                        <!-- <div class="image-container">
-                            <img src="src/prod.png" alt="Image Description" class="img-fluid card-image">
-                        </div>    -->
-                        <div class="video-container text-center">
-                            <video controls class="img-fluid">
-                                <source src="src/Group 15 Functional Test Submission 2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <p class="content-medium">A device designed for the final-year design course to bend 6mm steel pipes with an inner diameter of 3mm for bend angles up to 90 degrees.​​​​​​​​​​​​​​​​</p>             
-                        <p></p>
-                        <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
-                            <p class="text-center">
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/solidworks.svg" style="color: transparent;">
-                                    <span class="hover-text">Solidworks</span>
-                                </span>
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/mathcad.PNG" alt="Mathcad Logo style="color: transparent;">
-                                    <span class="hover-text">Mathcad</span>
-                                </span>
-                                </p>
-                        </div>
-                        <p> </p>
-                        <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
-                        <div class="additional-content">
-                            <p></p>
-                            <p class="content-text">​​​​​​​​​​​​​​​The year-long process was designed to follow the general Product Development Process of concept generation, basic design, detail design, design for prototyping, parts procurement, and testing. The product was constrained by several User Requirements (URs) regarding performance, budget, and mandatory features.
-                            <br><br>
-                            Design decisions had to be motivated by rigorous calculations based on mechanical strength, output torque, amperage, etc. that optimized or accounted for the various URs. Where calculations were unfeasible, sound engineering judgment had to be employed with a valid explanation. A 3D CAD model was generated using the various outputs of detail design.
-                            <br><br>
-                            From the detailed calculations and 3D model, the top 25% of designs were determined to be produced into prototypes, which mine was one of them. At this stage, we also formed groups of four. The next stage was to modify the design appropriately for prototyping. This meant accommodations for sheet metal bending and 3D printing.
-                            <br>
-                            <div class="image-container">
-                                <img src="src/cad.png" alt="Image Description" class="img-fluid card-image">
-                            </div>
-                            Finally, all the design parts were obtained from the workshop, and the model was integrated. This was an empowering moment when the product was finally in hand after being designed entirely from a sketch. In the final demonstration, the product achieved all the URs except for being able to bend the strongest 6mm Carbon Steel pipe. It was diagnosed that the plastic covers around the bending arm were generating friction when loaded, which was unaccounted for. Despite this, I was extremely proud of the product my team put together and was seeded with a passion for design.​​​​​​​​​​​​​​​​</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-6 mb-4">
-                <div class="card custom-card-color custom-jumbotron-text">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center">Simplified Power Plant Specification
-                        </h5>
-                        <p class= "text-center" >2023</p>
-                        <div class="image-container text-center">
-                            <img src="src/High level power plant analysis.png" alt="High level power plant analysis" class="img-fluid card-image">
-                            <figcaption class="mt-2 content-small"> Image courtesy of A/Prof WF Fuls produced for the MEC41083S 2023 course. </figcaption>
-                        </div>
-                        <p class="content-medium">A final-year Systems Engineering project involved designing a simplified Biomass Steam Power Plant. Groups of students worked on different subsystems, with my responsibility being the Steam Generator's basic design.​​​​​​​​​​​​​​​​</p>
-                        <p></p>
-                        <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
-                            <p class="text-center">
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/mathcad.PNG" alt="Mathcad Logo style="color: transparent;">
-                                    <span class="hover-text">Mathcad</span>
-                                </span>
-                            </p>
-                        </div>
-                        <p></p>
-                        <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
-                        <div class="additional-content">
-                            <p></p>
-                            <p class="content-text">
-                                This project was designed to give students a tangible introduction to Systems Engineering. The User Requirement Specification (URS) detailed the type and performance requirements of the desired Power Plants. Additional requirements concerned environmental and business (Costing, contracting, and operation) requirements. Students were then given several documents outlining the operation of the highly simplified power plants.
-                                <br><br>
-                                Students had to follow a Systems Engineering approach of initially conducting a High-level analysis. For this purpose, students were given "typical" running value ranges which could be used to analyse the water-steam cycle as well as the air and fuel cycle using Mathcad. Finally, operating conditions were determined by optimising for efficiency. Later on in the project, cost optimisation was incorporated to determine the final operating conditions.
-                                <br><br>
-                                A particularly crucial aspect of the course was defining proper requirements for the system. High-level requirements were generated from the URS, Functional Analysis, and the High-level Analysis. Interface requirements were generated for all the interfaces between subsystems.
-                                <br><br>
-                                Another important part of the course was to introduce students to proper documentation. This included numbering, revision numbering, and a strict documentation format. Given the iterative nature of sizing a power plant in which lower-level design decisions change operating conditions, revision numbering was crucial. Being a group project, version control was necessary to ensure all students were working with the correct documentation.
-                                <br><br>
-                                Once the High-level specification was completed, students were given one of seven sub-systems to similarly generate an analysis, functional analysis, and finally a Sub-system specification. My subsystem related to the Steam Generator and required the specification of the furnace bed size, superheater heat exchanger, and various other aspects of the generator.​​​​​​​​​​​​​​​​<br><br>
-                                The course culminated with producing a "Power Plant Specification" which included Prime Item Diagrams (PID), system definition, Functional Allocation, requirements for functional, operational, reliability, availability, constraints and standards.​​​​​​​​​
-                            ​​​​​​​​​​​​​​</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card custom-card-color custom-jumbotron-text">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center">VHDL model of an ADC
-                        </h5>
-                        <p class= "text-center" >2022</p>
-                        <div class="image-container text-center">
-                            <img src="src/ADC_model.png" alt="Block diagram of ADC model" class="img-fluid card-image">
-                            <figcaption class="mt-2 content-small"> This block diagram is for illustration purposes only.</figcaption>
-                        </div>
-                        <p class="content-medium"> A synthesisable VHDL Model of a Analog to Digital Converter (ADC) for the purpose of on-target firmware and interface testing​​​​​​​​​​​​​​​​. </p>
-                        <p></p>
-                        <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
-                            <p class="text-center">
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/vhdl.svg" alt="Mathcad Logo style="color: transparent;">
-                                    <span class="hover-text">VHDL</span>
-                                </span>
-                            </p>
-                        </div>
-                        <p></p>
-                        <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
-                        <div class="additional-content">
-                            <p></p>
-                            <p class="content-text">
-                                Part of a vacation work assignment at a company that uses FPGAs for Digital Signal Processing. VHDL, a hardware description language, is used for designing FPGA systems by providing simulation, synthesis, and verification tools to support the design process.
-                                <br><br>
-                                The ADC model was part of a larger company project to create a synthesisable model of their entire hardware solution to enable firmware and interface testing. In this case, synthesizable means that the model would be able to be deployed on-target, i.e., on an FPGA. The key concern with the model was that the response should have the same number of I/Os and behave according to the specifications in the datasheet.
-                                
-                            ​​​​​​​​​​​​​​</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-
-            <!-- <div class="col-md-6 mb-4">
-                <div class="card custom-card-color custom-jumbotron-text">
-                    <div class="card-body ">
-                        <h5 class="card-title">Line-Following Differentially Steered Robot
-                        </h5>
-                        <p class="card-text"> </p>
-                        <div class="image-container">
-                            <img src="svg/python.png" alt="Image Description" class="img-fluid card-image">
-                        </div>
-                        
-                        <p></p>
-                        <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
-                            <p class="text-center">
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/ros-original.svg" style="color: transparent;">
-                                    <span class="hover-text">ROS</span>
-                                </span>
-                                <span class="inline-block svg-icon" style="margin: 5px 5px;">
-                                    <img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/python-original.svg" style="color: transparent;">
-                                    <span class="hover-text">Python</span>
-                                </span>
-                                </p>
-                        </div>
-                        <p></p>
-                        <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this)">+</button>
-                        <div class="additional-content">
-                            <p></p>
-                            <p style="text-align: justify;">
-                            
-                            ​​​​​​​​​​​​​​​​</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-6">
-                <blockquote class="text-center content-text">
-                    <p class="mb-4">What to find out more about any of the projects? <br> <a href="contact.html">Contact Me</a>.</p>
-                </blockquote>
-            </div>
-        </div>
-        <p></p>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav d-flex flex-row justify-content-center w-100">
+        <li class="nav-item mx-2">
+          <a class="nav-link nav-item-spacing" href="index.html">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link nav-item-spacing" href="about.html">About</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link nav-item-spacing" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link nav-item-spacing" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-
-    <!-- Script -->
-    <script defer src="script.js"></script>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card custom-card-color custom-jumbotron-text">
+          <div class="card-body">
+            <h5 class="card-title text-center">Object Detection for the Duckiebot</h5>
+            <p class="text-center">2023</p>
+            <div class="image-container"><img src="src/abbeyRoad.png" alt="Abbey Road by the Quackles" class="img-fluid card-image"></div>
+            <p class="content-medium">Obstacle avoidance implemented using Yolov5 for object detection and a reactive Braitenberg controller on the Duckiebot platform. This project ranked within the top 10 among 2023 final-year projects.</p>
+            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
+              <p class="text-center"><span class="inline-block svg-icon" style="margin: 5px 5px;"><img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/ros-original.svg" style="color: transparent;"> <span class="hover-text">ROS</span></span> <span class="inline-block svg-icon" style="margin: 5px 5px;"><img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/python-original.svg" style="color: transparent;"> <span class="hover-text">Python</span></span></p>
+            </div><button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
+            <div class="additional-content">
+              <p class="content-text">Final-year undergraduate project to investigate the Duckiebot platform for Machine Learning by implementing an object detection model. A pre-trained YOLOv5 model, fine-tuned with a publicly available Duckietown dataset, was utilised to detect Duckietown-specific objects in Python.<br>
+              <br>
+              To enable autonomous object avoidance, a simple Braitenberg controller was employed. The final solution could detect objects (duckies) in the scene and compute wheel commands to avoid the objects for relatively simple scenarios. The project formed a foundational model that future students can improve and build upon for more sophisticated behaviors.​​​​​​​​​​​​​​​​</p><a href="https://drive.google.com/file/d/1_uiTz4mOIl-aGlWeUl2NbDmRzRhocNRD/view?usp=drivesdk" class="btn btn-outline-light" target="_blank">Thesis</a> <a href="https://github.com/Dinoclaro/DT_objdet" class="btn btn-outline-light" target="_blank">Github</a> <a href="https://duckietown.com/dino-claro-duckietown-journey/" class="btn btn-outline-light" target="_blank">Duckietown Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card custom-card-color custom-jumbotron-text">
+          <div class="card-body">
+            <h5 class="card-title text-center">Hand-Held, 6.4V Pipe Bender</h5>
+            <p class="text-center">2023</p>
+            <div class="video-container text-center">
+              <video controls="" class="img-fluid"><source src="src/Group%2015%20Functional%20Test%20Submission%202.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+            </div>
+            <p class="content-medium">A device designed for the final-year design course to bend 6mm steel pipes with an inner diameter of 3mm for bend angles up to 90 degrees.​​​​​​​​​​​​​​​​</p>
+            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
+              <p class="text-center"><span class="inline-block svg-icon" style="margin: 5px 5px;"><img alt="Python Logo" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/solidworks.svg" style="color: transparent;"> <span class="hover-text">Solidworks</span></span> <span class="inline-block svg-icon" style="margin: 5px 5px;"><img loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/mathcad.PNG" alt="Mathcad Logo style="> <span class="hover-text">Mathcad</span></span></p>
+            </div><button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
+            <div class="additional-content">
+              <p class="content-text">​​​​​​​​​​​​​​​The year-long process was designed to follow the general Product Development Process of concept generation, basic design, detail design, design for prototyping, parts procurement, and testing. The product was constrained by several User Requirements (URs) regarding performance, budget, and mandatory features.<br>
+              <br>
+              Design decisions had to be motivated by rigorous calculations based on mechanical strength, output torque, amperage, etc. that optimized or accounted for the various URs. Where calculations were unfeasible, sound engineering judgment had to be employed with a valid explanation. A 3D CAD model was generated using the various outputs of detail design.<br>
+              <br>
+              From the detailed calculations and 3D model, the top 25% of designs were determined to be produced into prototypes, which mine was one of them. At this stage, we also formed groups of four. The next stage was to modify the design appropriately for prototyping. This meant accommodations for sheet metal bending and 3D printing.<br></p>
+              <div class="image-container"><img src="src/cad.png" alt="Image Description" class="img-fluid card-image"></div>Finally, all the design parts were obtained from the workshop, and the model was integrated. This was an empowering moment when the product was finally in hand after being designed entirely from a sketch. In the final demonstration, the product achieved all the URs except for being able to bend the strongest 6mm Carbon Steel pipe. It was diagnosed that the plastic covers around the bending arm were generating friction when loaded, which was unaccounted for. Despite this, I was extremely proud of the product my team put together and was seeded with a passion for design.​​​​​​​​​​​​​​​​
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card custom-card-color custom-jumbotron-text">
+          <div class="card-body">
+            <h5 class="card-title text-center">Simplified Power Plant Specification</h5>
+            <p class="text-center">2023</p>
+            <div class="image-container text-center">
+              <img src="src/High%20level%20power%20plant%20analysis.png" alt="High level power plant analysis" class="img-fluid card-image">
+              <div class="mt-2 content-small">
+                Image courtesy of A/Prof WF Fuls produced for the MEC41083S 2023 course.
+              </div>
+            </div>
+            <p class="content-medium">A final-year Systems Engineering project involved designing a simplified Biomass Steam Power Plant. Groups of students worked on different subsystems, with my responsibility being the Steam Generator's basic design.​​​​​​​​​​​​​​​​</p>
+            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
+              <p class="text-center"><span class="inline-block svg-icon" style="margin: 5px 5px;"><img loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/mathcad.PNG" alt="Mathcad Logo style="> <span class="hover-text">Mathcad</span></span></p>
+            </div><button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
+            <div class="additional-content">
+              <p class="content-text">This project was designed to give students a tangible introduction to Systems Engineering. The User Requirement Specification (URS) detailed the type and performance requirements of the desired Power Plants. Additional requirements concerned environmental and business (Costing, contracting, and operation) requirements. Students were then given several documents outlining the operation of the highly simplified power plants.<br>
+              <br>
+              Students had to follow a Systems Engineering approach of initially conducting a High-level analysis. For this purpose, students were given "typical" running value ranges which could be used to analyse the water-steam cycle as well as the air and fuel cycle using Mathcad. Finally, operating conditions were determined by optimising for efficiency. Later on in the project, cost optimisation was incorporated to determine the final operating conditions.<br>
+              <br>
+              A particularly crucial aspect of the course was defining proper requirements for the system. High-level requirements were generated from the URS, Functional Analysis, and the High-level Analysis. Interface requirements were generated for all the interfaces between subsystems.<br>
+              <br>
+              Another important part of the course was to introduce students to proper documentation. This included numbering, revision numbering, and a strict documentation format. Given the iterative nature of sizing a power plant in which lower-level design decisions change operating conditions, revision numbering was crucial. Being a group project, version control was necessary to ensure all students were working with the correct documentation.<br>
+              <br>
+              Once the High-level specification was completed, students were given one of seven sub-systems to similarly generate an analysis, functional analysis, and finally a Sub-system specification. My subsystem related to the Steam Generator and required the specification of the furnace bed size, superheater heat exchanger, and various other aspects of the generator.​​​​​​​​​​​​​​​​<br>
+              <br>
+              The course culminated with producing a "Power Plant Specification" which included Prime Item Diagrams (PID), system definition, Functional Allocation, requirements for functional, operational, reliability, availability, constraints and standards.​​​​​​​​​ ​​​​​​​​​​​​​​</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card custom-card-color custom-jumbotron-text">
+          <div class="card-body">
+            <h5 class="card-title text-center">VHDL model of an ADC</h5>
+            <p class="text-center">2022</p>
+            <div class="image-container text-center">
+              <img src="src/ADC_model.png" alt="Block diagram of ADC model" class="img-fluid card-image">
+              <div class="mt-2 content-small">
+                This block diagram is for illustration purposes only.
+              </div>
+            </div>
+            <p class="content-medium">A synthesisable VHDL Model of a Analog to Digital Converter (ADC) for the purpose of on-target firmware and interface testing​​​​​​​​​​​​​​​​.</p>
+            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
+              <p class="text-center"><span class="inline-block svg-icon" style="margin: 5px 5px;"><img loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="ml-3 h-6 w-auto mr-3" src="/svg/vhdl.svg" alt="Mathcad Logo style="> <span class="hover-text">VHDL</span></span></p>
+            </div><button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
+            <div class="additional-content">
+              <p class="content-text">Part of a vacation work assignment at a company that uses FPGAs for Digital Signal Processing. VHDL, a hardware description language, is used for designing FPGA systems by providing simulation, synthesis, and verification tools to support the design process.<br>
+              <br>
+              The ADC model was part of a larger company project to create a synthesisable model of their entire hardware solution to enable firmware and interface testing. In this case, synthesizable means that the model would be able to be deployed on-target, i.e., on an FPGA. The key concern with the model was that the response should have the same number of I/Os and behave according to the specifications in the datasheet. ​​​​​​​​​​​​​​</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <blockquote class="text-center content-text">
+          <p class="mb-4">What to find out more about any of the projects?<br>
+          <a href="contact.html">Contact Me</a>.</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <script defer src="script.js"></script>
 </body>
 </html>

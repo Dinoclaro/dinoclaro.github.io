@@ -44,7 +44,7 @@ body {
         padding-bottom: 0;
     }
     .about-section {
-        transform: scale(85%);
+        transform: scale(85);
     }
 }
 .image-container {
@@ -297,7 +297,7 @@ i {
     
 }
 .content-text{
-    font-size: 1 rem;
+    font-size: 1rem;
     color: #d3d3d3;
     width: 100%; 
     line-height: 1.3;
@@ -322,7 +322,7 @@ br {
 .content-date{
     font-size: 1rem;
     color: #dee2e6;
-    width: 100;
+    width: 100%;
 }
 .about-content {
     width: 100%;
