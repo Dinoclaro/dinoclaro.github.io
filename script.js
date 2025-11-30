@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const content = button.nextElementSibling;
             if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block';
-                button.textContent = '-';
+                button.textContent = 'Less Info';
             } else {
                 content.style.display = 'none';
-                button.textContent = '+';
+                button.textContent = 'More Info';
             }
         });
     });

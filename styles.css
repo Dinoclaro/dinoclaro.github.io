@@ -305,6 +305,10 @@ i {
 .orange-text{
     color: #f3d55e;    
 }
+.orange-text a{
+    color: #f3d55e;
+    text-decoration: none;
+}
 .blue-text{
     color: #5E7CF3;
 }
