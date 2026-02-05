@@ -74,7 +74,7 @@
           <p class="text-center">2025</p>
 
           <div class="video-container text-center">
-            <video controls class="img-fluid">
+            <video controls class="img-fluid" muted>
               <source src="media/videos/colourSort.mp4" type="video/mp4">
             </video>
           </div>
@@ -106,12 +106,13 @@
               <a href="https://rwr.ethz.ch/" target="_blank" class="text-info">Real World Robotics</a>
               course at ETH Zurich.
               The course comprised two major projects. The first focused on in-hand cube rotation using RL trained in simulation and deployed via Sim2Real techniques.
-              Policies achieved 6.0 rotations/min using aggressive regularisation and domain randomisation.
-              For the imitation learning task, architecture search showed that DINOv3 backbones combined with Diffusion Policy outperform deterministic alternatives for multi-colour object sorting.
+              Policies achieved 6.0 rotations/min using domain randomisation, reward tuning, and regularisation.
+
+              For the, second, imitation learning project, an architecture search showed that DINOv3 backbones combined with Diffusion Policy outperform alternatives (DINOv2 and ResNet as visual backbones, and ACT as policy) for multi-colour object sorting.
             </p>
 
             <div class="video-container text-center">
-              <video controls class="img-fluid">
+              <video controls class="img-fluid" muted>
                 <source src="media/videos/cubeRot.mp4" type="video/mp4">
               </video>
             </div>
@@ -134,8 +135,8 @@
           </div>
 
           <p class="content-medium">
-            Designed a mechanical modification adding a coupled Distal Interphalangeal (DIP) joint to the open-source ORCA hand.
-            The image shows a comparison between the original ORCA hand (left) and the modified PIP–DIP coupled joint (right).
+            Designed a mechanical modification to the open-source ORCA hand that introduces a coupled Distal Interphalangeal (DIP) joint.
+            The image above compares the original ORCA hand (left) with the modified PIP–DIP coupled joint (right).
           </p>
 
           <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
