@@ -29,6 +29,9 @@
           <div class="card-body">
             <h5 class="card-title text-center">Tokyo Drift: Monocular VO/VIO</h5>
             <p class="text-center">2025</p>
+            <div class="image-container">
+              <img src="media/images/parking" alt="Monocular VO on the Parking Dataset" class="img-fluid card-image">
+            </div>
             <p class="content-medium">
               Monocular Visual Odometry (VO/VIO) pipeline for 6-DoF trajectory estimation using popular autonomous driving datasets (KITTI, Malaga) in Python. 
               Check out the videos <a href="https://www.youtube.com/playlist?list=PLERsbtMs2t_4HCC6o5vhXENVLjocNDl6g" target="_blank" class="text-info">here</a>.
@@ -130,9 +133,8 @@
           <div class="card-body">
             <h5 class="card-title text-center">3-DOF Cheetah Inspired Spine</h5>
             <p class="text-center">2025</p>
-            <div class="image-container">
-              <img src="media/images/spineleka.png" alt="3-DOF cheetah inspired spine" class="img-fluid card-image">
-            </div>
+                <div class="video-container text-center">
+                <video controls class="img-fluid"><source src="media/videos/spineleka_validatee_cropped.mp4" type="video/mp4"></video>
             <p class="content-medium">
               A 3-DOF cheetah inspired spine designed and manufactured for a 9-DOF legged robotic platform to investigate the role of the tail in agile locomotion at the African Robotics Unit, University of Cape Town.
             </p>
@@ -151,12 +153,14 @@
             <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
             <div class="additional-content">
               <p class="content-text">This project involved prototyping various spine solutions, CAD design, full mechanical desing analysis and then manufacturing of the spine. Unfortunately, the full robot was not fully validated before my internship finshed but the simulation video below shows the a proof of concept. In this video the roll axis of the spine is actauted using a triangular torque ramp signal. This is supposed to simulate the disturbance injected to the hindlegs of the cheetah during agile manoeuvres. The tail (unctrolled in this case), acting as counter-weight, significantly reduces the roll of the hind-quarters.</p>
+              <div class="image-container">
+                <img src="media/images/spineleka.png" alt="3-DOF cheetah inspired spine" class="img-fluid card-image">
+              </div>
               <div class="video-container text-center">
                 <video controls class="img-fluid"><source src="media/videos/spineleka_simscape.mp4" type="video/mp4"></video>
               </div>
               <p class="content-text" style="margin-top: 10px;">This video shows the initial validation of the 3-DOF spine with only the yaw and pitch differential motor connected and being controlled using an impedance controller.</p>
-              <div class="video-container text-center">
-                <video controls class="img-fluid"><source src="media/videos/spineleka_validatee_cropped.mp4" type="video/mp4"></video>
+
               </div>
             </div>
           </div>
