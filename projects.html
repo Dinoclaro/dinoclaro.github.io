@@ -23,7 +23,45 @@
 
   <div class="container">
     <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card custom-card-color custom-jumbotron-text">
+          <div class="card-body">
+            <h5 class="card-title text-center">3-DOF Cheetah Inspired Spine</h5>
+            <p class="text-center">2025</p>
+                <div class="video-container text-center">
+                <video controls class="img-fluid"><source src="media/videos/spineleka_validatee_cropped.mp4" type="video/mp4"></video>
+            <p class="content-medium">
+              A 3-DOF cheetah inspired spine designed and manufactured for a 9-DOF legged robotic platform to investigate the role of the tail in agile locomotion at the African Robotics Unit, University of Cape Town.
+            </p>
+            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
+              <p class="text-center">
+                <span class="inline-block svg-icon" style="margin: 5px;">
+                  <img width="20" height="20" src="media/svg/solidworks.svg" alt="Solidworks logo">
+                  <span class="hover-text">Solidworks</span>
+                </span>
+                <span class="inline-block svg-icon" style="margin: 5px;">
+                  <img width="20" height="20" src="media/svg/matlab-original.svg" alt="Matlab logo">
+                  <span class="hover-text">Matlab</span>
+                </span>
+              </p>
+            </div>
+            <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
+            <div class="additional-content">
+              <p class="content-text">This project involved prototyping various spine solutions, CAD design, full mechanical desing analysis and then manufacturing of the spine. Unfortunately, the full robot was not fully validated before my internship finshed but the simulation video below shows the a proof of concept. In this video the roll axis of the spine is actauted using a triangular torque ramp signal. This is supposed to simulate the disturbance injected to the hindlegs of the cheetah during agile manoeuvres. The tail (unctrolled in this case), acting as counter-weight, significantly reduces the roll of the hind-quarters.</p>
+              <div class="image-container">
+                <img src="media/images/spineleka.png" alt="3-DOF cheetah inspired spine" class="img-fluid card-image">
+              </div>
+              <div class="video-container text-center">
+                <video controls class="img-fluid"><source src="media/videos/spineleka_simscape.mp4" type="video/mp4"></video>
+              </div>
+              <p class="content-text" style="margin-top: 10px;">This video shows the initial validation of the 3-DOF spine with only the yaw and pitch differential motor connected and being controlled using an impedance controller.</p>
 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <div class="col-md-6 mb-4">
         <div class="card custom-card-color custom-jumbotron-text">
           <div class="card-body">
@@ -123,45 +161,6 @@
               <p class="content-text">
                 Inspired by human biomechanical synergies, this project introduces distal articulation coupled to the PIP joint to reduce control complexity while improving dexterity. Criss-cross tendon routing with a target PIP–DIP ratio of 0.7 was used to expand the fingertip workspace and improve grasp robustness on small-diameter objects compared to the original design.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-4">
-        <div class="card custom-card-color custom-jumbotron-text">
-          <div class="card-body">
-            <h5 class="card-title text-center">3-DOF Cheetah Inspired Spine</h5>
-            <p class="text-center">2025</p>
-                <div class="video-container text-center">
-                <video controls class="img-fluid"><source src="media/videos/spineleka_validatee_cropped.mp4" type="video/mp4"></video>
-            <p class="content-medium">
-              A 3-DOF cheetah inspired spine designed and manufactured for a 9-DOF legged robotic platform to investigate the role of the tail in agile locomotion at the African Robotics Unit, University of Cape Town.
-            </p>
-            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
-              <p class="text-center">
-                <span class="inline-block svg-icon" style="margin: 5px;">
-                  <img width="20" height="20" src="media/svg/solidworks.svg" alt="Solidworks logo">
-                  <span class="hover-text">Solidworks</span>
-                </span>
-                <span class="inline-block svg-icon" style="margin: 5px;">
-                  <img width="20" height="20" src="media/svg/matlab-original.svg" alt="Matlab logo">
-                  <span class="hover-text">Matlab</span>
-                </span>
-              </p>
-            </div>
-            <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
-            <div class="additional-content">
-              <p class="content-text">This project involved prototyping various spine solutions, CAD design, full mechanical desing analysis and then manufacturing of the spine. Unfortunately, the full robot was not fully validated before my internship finshed but the simulation video below shows the a proof of concept. In this video the roll axis of the spine is actauted using a triangular torque ramp signal. This is supposed to simulate the disturbance injected to the hindlegs of the cheetah during agile manoeuvres. The tail (unctrolled in this case), acting as counter-weight, significantly reduces the roll of the hind-quarters.</p>
-              <div class="image-container">
-                <img src="media/images/spineleka.png" alt="3-DOF cheetah inspired spine" class="img-fluid card-image">
-              </div>
-              <div class="video-container text-center">
-                <video controls class="img-fluid"><source src="media/videos/spineleka_simscape.mp4" type="video/mp4"></video>
-              </div>
-              <p class="content-text" style="margin-top: 10px;">This video shows the initial validation of the 3-DOF spine with only the yaw and pitch differential motor connected and being controlled using an impedance controller.</p>
-
-              </div>
             </div>
           </div>
         </div>
