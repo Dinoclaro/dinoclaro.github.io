@@ -32,7 +32,7 @@
   </nav>
   <main>
     <div class="container py-4">
-      <div class="p-4 bg-body-tertiary rounded-3 custom-jumbotron-text custom-jumbotron-bg">
+      <div class="p-4 bg-body-tertiary rounded-3 custom-jumbotron-text custom-jumbotron-bg" id="intro">
         <div class="container-fluid py-5">
           <h1 class="display-3 fw-bold">Hi there</h1>
             <p class="col-md-8 fs-4 content-medium">
@@ -47,12 +47,16 @@
           </ul><a href="media/docs/Dino_Claro_CVTabular.pdf" class="btn btn-outline-light" target="_blank">Résumé</a>
         </div>
       </div>
+      
       <div class="row align-items-md-stretch">
-        <div class="col-md-6" style="margin-top: 30px;">
+        <div class="col-md-6" style="margin-top: 30px;" id="current-endeavours">
           <div class="h-100 p-4 mb-2 text-bg-dark rounded-3 custom-jumbotron-text custom-jumbotron-bg">
             <h2 class="display-6 fw-bold">Current Endeavours</h2>
             <p class="content-text">
               As of September 2025, I am pursuing a <a href="https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/robotics-systems-and-control.html" target="_blank">Master’s in Robotics, Systems and Control</a> at ETH Zurich.
+              <br>
+              <br>
+              Semester Project at the ETH Soft Robotics Lab focussing on offline model-based RL for a electrohydraulic actuated leg.
               <br>
               <br>
               Prior to this, I completed a six-month internship at the <a href="https://africanroboticsunit.com/" target="_blank">African Robotics Unit</a>, where I designed and manufactured a 3-DOF spine for a 9-DOF legged robotic platform. This platform is being used to investigate the role of the tail in agile locomotion, drawing inspiration from the cheetah.
@@ -65,7 +69,53 @@
               </p>
           </div>
         </div>
-        <div class="col-md-6" style="margin-top: 30px;">
+        <div class="col-md-6" style="margin-top:30px;" id="research-trajectory">
+          <div class="h-100 p-4 text-bg-dark rounded-3 custom-jumbotron-bg custom-jumbotron-text">
+            <h2 class="display-6 fw-bold">Research Trajectory</h2>
+            <p class="content-text mb-4">
+              A progression of projects that have shaped my research interests in
+              control, embodied intelligence, and bio-inspired robotics.
+            </p>
+
+            <ul class="timeline-3 research-timeline">
+              <li class="timeline-item">
+                <a href="projects.html#project-duckiebot">Bachelor’s Thesis</a>
+                <p class="mt-2 content-text">
+                  Foundation in control and mechatronic systems.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <a href="projects.html#project-spine">Bio-inspired Spine Project</a>
+                <p class="mt-2 content-text">
+                  Designed and built a 3-DOF cheetah-inspired robotic spine.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <a href="projects.html#semester-project">ETH Semester Project</a>
+                <p class="mt-2 content-text">
+                  Offline model-based RL for electrohydraulic legged robotics.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <span class="orange-text">Master’s Thesis (Upcoming)</span>
+                <p class="mt-2 content-text">
+                  Next step in this trajectory.
+                </p>
+              </li>
+            </ul>
+
+            <a href="projects.html" class="btn btn-outline-light mt-3">
+              Explore Projects
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6" style="margin-top: 30px;" id="skills">
           <div class="h-100 p-4 mb-2 text-bg-dark rounded-3 custom-jumbotron-text custom-jumbotron-bg">
             <h2 class="display-6 fw-bold">Skills</h2>
             <p class="content-text mb-2">Coding languages and software used for various projects:</p>
@@ -73,14 +123,12 @@
             <p class="content-text mb-2">Core skills developed through various projects:</p>
               <ul class="content-text ms-3">
                 <li><strong class="orange-text"><a href="projects.html">Robotic software development: ROS, Python, machine learning </a></strong></li>
-                <li><strong class="orange-text"><a href="projects.html#3-DOF cheetah inspired spine">Mechanical Design: 3D Modelling, mechanics, stress analysis, product development</a></strong></li>
+                <li><strong class="orange-text"><a href="projects.html#project-spine">Mechanical Design: 3D Modelling, mechanics, stress analysis, product development</a></strong></li>
                 <li><strong class="orange-text"><a href="projects.html">Embedded Systems</a></strong></li>
               </ul>
           </div>
         </div>
-      </div>
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6" style="margin-top: 30px;">
+        <div class="col-md-6" style="margin-top: 30px;" id="education">
           <div class="h-100 p-4 text-bg-light rounded-3 custom-jumbotron-bg custom-jumbotron-text">
             <h2 class="display-6 fw-bold">Education</h2>
             <ul class="timeline-3">
@@ -104,7 +152,10 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-6" style="margin-top: 30px;">
+      </div>
+      
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6" style="margin-top: 30px;" id="awards">
           <div class="h-100 p-4 text-bg-light rounded-3 custom-jumbotron-bg custom-jumbotron-text">
             <h2 class="display-6 fw-bold">Awards</h2>
             <ul class="timeline-3">
@@ -140,9 +191,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6" style="margin-top: 30px;">
+        <div class="col-md-6" style="margin-top: 30px;" id="documents">
           <div class="h-100 p-4 mb-2 text-bg-light rounded-3 custom-jumbotron-bg custom-jumbotron-text">
             <h2 class="display-6 fw-bold">Documents and other links</h2>
             <ul class="list-group no-list-style">
@@ -156,6 +205,7 @@
           </div>
         </div>
       </div>
+      
     </div>
   </main>
   <footer class="container">
