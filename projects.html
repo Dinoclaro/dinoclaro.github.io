@@ -64,6 +64,42 @@
         </div>
       </div>
       
+      <!-- Project: ORCA Hand -->
+      <div class="col-md-6 mb-4" id="project-orca-hand">
+        <div class="card custom-card-color custom-jumbotron-text">
+          <div class="card-body">
+            <h5 class="card-title text-center">ORCA Hand: PIP–DIP Coupling</h5>
+            <p class="text-center">2025</p>
+              <div class="video-container text-center">
+                <video controls class="img-fluid"><source src="media/videos/" type="video/airpods.mp4"></video>
+            </div>
+            <p class="content-medium">
+              Designed a mechanical modification for the open-source <a href="https://www.orcahand.com/" target="_blank" class="text-info">ORCA robotic hand</a> that introduced a coupled Distal Interphalangeal (DIP) joint. The image above compares the original ORCA hand (left) with the modified PIP–DIP coupled joint (right).
+            </p>
+            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
+              <p class="text-center">
+                <span class="inline-block svg-icon" style="margin: 5px;">
+                  <img width="20" height="20" src="media/svg/solidworks.svg" alt="SolidWorks logo">
+                  <span class="hover-text">SolidWorks</span>
+                </span>
+              </p>
+            </div>
+            <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
+            <div class="additional-content">
+              <p class="content-text">
+                <div class="image-container">
+              <img src="media/images/DesignComparison.jpg" alt="Various demos using the modified ORCA hand" class="img-fluid card-image">
+                Inspired by human biomechanical synergies, this project introduces distal articulation coupled to the PIP joint to reduce control complexity while improving dexterity. Criss-cross tendon routing with a target PIP–DIP ratio of 0.7 was used to expand the fingertip workspace and improve grasp robustness on small-diameter objects compared to the original design.
+              </p>
+              <div class="image-container">
+              <img src="media/images/DesignComparison.jpg" alt="Comparison of original ORCA hand and modified PIP–DIP coupled joint" class="img-fluid card-image">
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <!-- Project: Tokyo Drift -->
       <div class="col-md-6 mb-4" id="project-tokyo-drift">
         <div class="card custom-card-color custom-jumbotron-text">
@@ -92,14 +128,14 @@
             <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
             <div class="additional-content">
               <p class="content-text">
-                Implemented a bootstrapping approach that initialises a 3D point cloud from two keyframes and continuously uses 2D–3D correspondences to estimate camera motion. The system is being extended to a tightly coupled Visual–Inertial Odometry (VIO) pipeline using a Multi-State Constraint Kalman Filter (MSCKF) to fuse IMU data and mitigate scale drift inherent to monocular setups.
+                Implemented a bootstrapping visual odometry approach that initialises a 3D point cloud from two keyframes and continuously generates 2D–3D correspondences to estimate camera motion. The system is being extended to a tightly coupled Visual–Inertial Odometry (VIO) pipeline using a Multi-State Constraint Kalman Filter (MSCKF) to fuse IMU data and mitigate scale drift inherent to monocular setups.
               </p>
               <a href="https://github.com/Dinoclaro/ThreeBlindMice" class="btn btn-outline-light" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
       </div>
-
+      
       <!-- Project: Dexterous Manipulation -->
       <div class="col-md-6 mb-4" id="project-dexterous">
         <div class="card custom-card-color custom-jumbotron-text">
@@ -140,37 +176,9 @@
           </div>
         </div>
       </div>
-
-      <!-- Project: ORCA Hand -->
-      <div class="col-md-6 mb-4" id="project-orca-hand">
-        <div class="card custom-card-color custom-jumbotron-text">
-          <div class="card-body">
-            <h5 class="card-title text-center">ORCA Hand: PIP–DIP Coupling</h5>
-            <p class="text-center">2025</p>
-            <div class="image-container">
-              <img src="media/images/DesignComparison.jpg" alt="Comparison of original ORCA hand and modified PIP–DIP coupled joint" class="img-fluid card-image">
-            </div>
-            <p class="content-medium">
-              Designed a mechanical modification to the open-source ORCA hand that introduces a coupled Distal Interphalangeal (DIP) joint. The image above compares the original ORCA hand (left) with the modified PIP–DIP coupled joint (right).
-            </p>
-            <div class="col-md d-flex justify-content-center align-items-center" style="margin-top: 10px;">
-              <p class="text-center">
-                <span class="inline-block svg-icon" style="margin: 5px;">
-                  <img width="20" height="20" src="media/svg/solidworks.svg" alt="SolidWorks logo">
-                  <span class="hover-text">SolidWorks</span>
-                </span>
-              </p>
-            </div>
-            <button class="btn btn-outline-light toggle-button d-flex align-items-center" onclick="toggleContent(this,'+')">+</button>
-            <div class="additional-content">
-              <p class="content-text">
-                Inspired by human biomechanical synergies, this project introduces distal articulation coupled to the PIP joint to reduce control complexity while improving dexterity. Criss-cross tendon routing with a target PIP–DIP ratio of 0.7 was used to expand the fingertip workspace and improve grasp robustness on small-diameter objects compared to the original design.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    </div>
+      
+    <div class="row">
       <!-- Project: Duckiebot -->
       <div class="col-md-6 mb-4" id="project-duckiebot">
         <div class="card custom-card-color custom-jumbotron-text">
@@ -237,7 +245,7 @@
           </div>
         </div>
       </div>
-
+    </div>
       <!-- Project: Power Plant -->
       <div class="col-md-6 mb-4" id="project-power-plant">
         <div class="card custom-card-color custom-jumbotron-text">
